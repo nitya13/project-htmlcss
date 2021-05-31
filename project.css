@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ #navbar img {
+    height: 60px;
+    width: 70px;
+    border: 1px yellow solid;
+    border-radius: 29px;
+    margin: 12px;
+}
+#navbar{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    top:0px
+
+}
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3em;
+    
+  
+
+}
+#navbar ul li a{
+    /* display block because we need padding */
+    display: block;
+    padding: 21px;
+    margin: 8px;
+    border-radius: 20px;
+    color: blanchedalmond;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    background-color: blanchedalmond;
+    color: black;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 550px;
+    padding: 4px 181px;
+
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url("chess.jpg") no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+.top{
+    font-family: 'Press Start 2P', cursive;
+    color:white;
+    text-shadow: 3px 2px 2px darkcyan;
+    padding: 12px;
+    text-align: center;
+}
+.top1{
+    font-family: 'Press Start 2P', cursive;
+    color:rgb(14, 8, 8);
+    text-shadow: 3px 2px 2px darkcyan;
+    text-align: center;
+    padding-top: 31px;
+}
+
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.btn{
+    background: black;
+    color:white;
+    width: 99px;
+    height: 30px;
+    border: 1px white solid;
+    border-radius: 12px;
+    margin: 41px;
+   cursor: pointer;
+}
+.game{
+    font-size: 40px;
+    padding: 25px;
+    margin: 70px;
+    text-align: center;
+}
+
+.secondary {
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+     padding: 12px; 
+
+
+}
+#services{
+    display: flex;
+    margin: 34px;
+}
+#services .box{
+    border: 2px solid rgb(219, 16, 16);
+    padding: 16px;
+    margin: 12px;
+    border-radius: 41px
+}
+#services .box img{
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+#client-section{
+    
+    position: relative;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("basketball.jpg");
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-items{
+    padding: 1px;
+}
+#client img
+{
+    height: 77px;
+    width: 83px;
+    padding: 12px;
+}
+/* contact */
+#contact{
+position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url("contact.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+
+footer{
+    text-align: center;
+    background: rgb(19, 18, 15);
+    color: cornsilk;
+
+}
+#contactbox{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+
+}
+#contactbox textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border: black 2px solid;
+    border-radius: 16px
+}
+#contactbox form{
+   width: 40%;
+}
+#contactbox label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#contactbox input{
+    border: solid black 2px;
+    width: 100%;
+    height: 30px;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 12px;
+}
